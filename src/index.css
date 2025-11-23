@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+:root{
+    --primary: #0A3D62;      /* Azul profundo - fundos, header*/ 
+    --secondary: #74B9FF;    /* Azul claro - seções, hover*/
+    --accentBlue: #0984E3;   /*Azul médio - botões ou destaques*/ 
+
+          /*Metálicos*/ 
+    --gold: #D4AF37;          /*Dourado - CTAs, ícones, detalhes*/ 
+    --silver: #C0C0C0;        /*Prateado - bordas, divisórias*/ 
+
+          /*Textos e fundo*/ 
+    --text: #2D3436;           /*Cinza escuro - textos principais*/ 
+    --background: #F0F4F8;     /*Fundo claro*/ 
+}
