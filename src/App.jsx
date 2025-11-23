@@ -12,7 +12,11 @@ function App() {
       <Header/>
 
         <main className='border-2 border-dotted mb-5 mt-5'>
-          <section className="secao">section1</section>
+          <section className="secao">
+            <h2>Usando branc1</h2>
+            section1
+
+          </section>
           <section className="secao">section2</section>
           <section className="secao">section3</section>
         </main>
