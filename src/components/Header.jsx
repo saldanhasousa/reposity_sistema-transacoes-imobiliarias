@@ -9,7 +9,7 @@ function Header(){
     const img_log = "https://instic.uniluanda.ao/wp-content/uploads/2024/09/favicon-png.png"
     
     return(
-        <header className=" p-5 text-black flex justify-between items-center bg-blue-500 absolute top-0 w-full row-end-2 row-start-1">
+        <header className=" p-5 text-black flex justify-between items-center bg-blue-500 absolute top-0 w-full row-end-2 row-start-1 text-[1.2em]">
             
             <div id="logo" className='w-[60px] h-20'>
 
@@ -17,7 +17,7 @@ function Header(){
             </div>
 
             <menu className=''>
-                <ul className="flex flex-nowrap *:p-[5px]  gap-12 max-sm:hidden font-bold *:rounded-[10px] *:hover:bg-blue-400 ">                        
+                <ul className="flex flex-nowrap *:p-[5px]  gap-12 max-sm:hidden font-bold *:rounded-[10px] *:hover:bg-blue-400 *:hover:duration-600 *:hover:transition-colors">                        
                         <li>
                             <a href="">
                                 <img src={home_img} alt="" className=''/>
