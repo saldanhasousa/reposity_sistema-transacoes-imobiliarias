@@ -4,6 +4,8 @@ import './App.css'
 import Footer from './components/Footer.jsx'
 import Header from './components/Header.jsx'
 import bgimg_section from './assets/image/img_header/condominio.jpg'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
 
 function App() {
   const quebra = '\n'
@@ -29,11 +31,31 @@ function App() {
           <section className="secao p-2.5">
             <h2 className='bg-amber-400 w-20 my-4'>Destaque</h2>
 
+          
            <div id="min_sectio2 " className='flex w-full *:w-3xs *:h-50 *:bg-amber-100 gap-5 justify-center'>
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
-            <div>4</div>
+            <Swiper
+            
+            spaceBetween={50}
+            slidesPerView={4}
+            loop={true}
+          >
+
+            <SwiperSlide>
+              <div>1</div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <div>2</div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <div>3</div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <div>4</div>
+            </SwiperSlide>
+            </Swiper>
            </div> 
 
           </section>
