@@ -1,5 +1,5 @@
 @import "tailwindcss";
-
+/*
 @theme {
   --animate-minha: wiggle .8s ease infinite;
   @keyframes wiggle {
@@ -8,5 +8,6 @@
     }
 
   }
-}
+}*/
+
 

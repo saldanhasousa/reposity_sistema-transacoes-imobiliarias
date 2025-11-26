@@ -1,31 +1,34 @@
 import pesquisa from './../assets/image/img_header/icons8-pesquisar-24.png'
-import home_img from './../assets/image/img_header/home_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png'
 import close_img from './../assets/image/img_header/close_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png'
 import menu_img from './../assets/image/img_header/menu_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png'
 
 
+import { Routes, Route } from "react-router-dom";
+import Imoveis from './imoveis';
+
+
+
 
 function Header(){
-    const img_log = "https://instic.uniluanda.ao/wp-content/uploads/2024/09/favicon-png.png"
-    
+        
     return(
-        <header className=" p-5 text-black flex justify-between items-center bg-blue-500 absolute top-0 w-full row-end-2 row-start-1 text-[1.2em]">
-            
-            <div id="logo" className='w-[60px] h-20'>
+        <header className="text-white flex items-center fixed bg-gray-400 top-0 w-full row-end-2 row-start-1 justify-center text-[1.2em] z-50 max-sm:justify-end gap-3.5 py-2.5 pr-3.5">
 
-                <img src={img_log} alt="" />
-            </div>
+
+           
+
+
 
             <menu className=''>
-                <ul className="flex flex-nowrap *:p-[5px]  gap-12 max-sm:hidden font-bold *:rounded-[10px] *:hover:bg-blue-400 *:hover:duration-600 *:hover:transition-colors">                        
+                <ul className="flex flex-nowrap *:p-[5px]  gap-12 max-sm:hidden font-bold *:rounded-[10px] *:hover:bg-gray-300 *:hover:duration-600 *:hover:transition-colors">                        
                         <li>
                             <a href="">
-                                <img src={home_img} alt="" className=''/>
+                                Home
                             </a>
                         </li>
 
                         <li>
-                            <a href="">Imóveis</a>
+                            Imóveis
                         </li>
 
                         <li>
@@ -42,13 +45,20 @@ function Header(){
                         
                 </ul>
 
-                <div className='sm:hidden bg-blue-400 p-1 rounded-[5px] shadow-2xs'>
+                <div className='sm:hidden bg-gray-300 p-1 rounded-[5px] shadow-2xs'>
                     <img src={menu_img} alt="" />
                 </div>
             </menu>
 
-            <div id="img_pesquisa">
-                <img src={pesquisa} alt="" />
+            <div className=' flex gap-3.5 items-center'>
+                <div id="img_pesquisa" className='pl-6'>
+                    <img src={pesquisa} alt="" />
+                </div>
+                <div>
+                    <button type="button" className='p-[5px] rounded-[10px] bg-gray-300 '>
+                        Login
+                    </button>
+                </div>
             </div>
         </header>
     )

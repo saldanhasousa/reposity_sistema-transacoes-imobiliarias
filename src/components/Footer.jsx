@@ -1,6 +1,6 @@
 function Footer(){
     return(
-        <footer className="border-2 border-solid row-end-4 row-start-3 bg-blue-500 flex justify-evenly gap-0.5 p-2 **:font-bold">
+        <footer className=" row-end-4 row-start-3 bg-gray-400 flex justify-evenly gap-0.5 p-2 **:font-bold">
             <div className="informacaof">
                 <h2>Redes</h2>
                <ul>
